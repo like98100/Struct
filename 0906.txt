@@ -1,0 +1,34 @@
+0906
+
+�����˻�
+
+�ڷᱸ�� -> �˰���� ǥ�� -> ���� �ذ�
+
+
+<�˰���� ������>
+-�ð�
+-�޸�
+-������
+
+
+����
+-��(value)
+-�ּ�(address)
+-�̸�(name)
+-�ڷ���(datatype)
+
+Data Type(�ڷ���)
+ex) Sizeof(int) == 4byte <==> 32bit
+    Sizeof(arr)(int arr[100]) == 400byte
+
+int a;
+int *pa = null;
+pa = &a;          V----------V-------V---------------windows
+sizeof(pa) == 4(32bit)/8(64bit)/16(128bit)byte
+
+
+
+malloc()
+calloc()
+
+www.tutorialspoint.com
