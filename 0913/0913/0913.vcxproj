@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{89308370-4A3A-47D7-9B0E-24CCEDAC6B23}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -141,9 +144,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="source.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
