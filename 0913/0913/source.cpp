@@ -10,6 +10,22 @@ int main()
 
 	if (num != -1) printf("정해진 값은 %d번째에 있습니다.\n", num);
 
+	printf("\n\n");
+
+
+	A = (int*)calloc(1000, sizeof(int));
+	num = BinSearch(A, 1000, 20);
+
+	if (num != -1) printf("정해진 값은 %d번째에 있습니다.\n", num);
+
+	printf("\n\n");
+
+
+	A = (int*)calloc(1000000, sizeof(int));
+	num = BinSearch(A, 1000000, 20);
+
+	if (num != -1) printf("정해진 값은 %d번째에 있습니다.\n", num);
+
 	free(A);
 	return 0;
 }
