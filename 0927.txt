@@ -1,0 +1,49 @@
+ 스택큐, 재귀 시험범위 예정
+
+
+ 0927
+ 
+ (user custom stack function)
+ push()
+ pop()
+ peek()
+ printstack()
+ initialize()
+ ...
+
+ Struct IntStack
+ {
+ -int max //Array Size
+ -int top //Last inserted data index
+ -int *stk //Array address
+ }
+ 
+ |
+ V
+
+ Memory/Heap
+ {
+ Stack Array
+ }
+ 
+ (int*)calloc()
+ 
+ 
+ 
+ int push(IntStack *stack, int x)
+ {
+	Return 0	//if succeeded
+	Return -1	//if failed
+
+	
+ } 
+
+ initialize(IntStack *stack, int inmax)
+ {
+ //스택 구조체 변수 멤버값들의 초기화
+ 1.stk <- HEAP 영역에서 메모리 확보
+ 2.top <- -1
+ 3.max <- inmax		//if succeeded
+ 3.max <- 0			//if failed
+
+ }

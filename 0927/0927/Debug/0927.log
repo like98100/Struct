@@ -1,0 +1,4 @@
+﻿  stack.c
+c:\users\b407_21\desktop\struct\0927\0927\stack.c(37): warning C4013: 'isfull'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  0927.vcxproj -> C:\Users\B407_21\Desktop\Struct\0927\Debug\0927.exe
+  0927.vcxproj -> C:\Users\B407_21\Desktop\Struct\0927\Debug\0927.pdb (Full PDB)
