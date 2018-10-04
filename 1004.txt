@@ -1,0 +1,8 @@
+initializeq() //q 구조체 멤버값들의 초기화(front=rear=-1)
+terminate() //할당받은 메모리 해제
+enqueue(x) //q의 [rear+1]인덱스에 data x를 insert
+dequeue() //q의 front값을 +1 증가
+coutq() //q의 data 개수 출력
+isemptyq() //q가 비었는지 검사(front == -1 AND rear == -1)
+isfullq() //q가 가득 찼는지 검사(rear == max-1)
+printq() //q의 data 모두 출력
