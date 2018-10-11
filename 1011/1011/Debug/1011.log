@@ -1,0 +1,4 @@
+﻿  queue.c
+c:\users\b407_21\desktop\struct\1011\1011\queue.c(136): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+  1011.vcxproj -> C:\Users\B407_21\Desktop\Struct\1011\Debug\1011.exe
+  1011.vcxproj -> C:\Users\B407_21\Desktop\Struct\1011\Debug\1011.pdb (Full PDB)
