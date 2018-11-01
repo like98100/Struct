@@ -1,0 +1,4 @@
+﻿  hw1.cpp
+c:\users\b407_20\desktop\struct\1101_full\hw1\hw1\hw1.cpp(9): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  hw1.vcxproj -> C:\Users\B407_20\Desktop\Struct\1101_full\hw1\Debug\hw1.exe
+  hw1.vcxproj -> C:\Users\B407_20\Desktop\Struct\1101_full\hw1\Debug\hw1.pdb (Full PDB)
