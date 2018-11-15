@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 10
+#define N 200000
 
 void swap(int *x, int *y)
 {
@@ -59,10 +59,15 @@ int main()
 
     for(i = 0; i < N; i++) a[i] = rand() % N + 1;
 
-    printArr(a, N);
-    //BubbleSort(a, N);
+    //printArr(a, N);
+    BubbleSort(a, N);
+    //printArr(a, N);
+    printf("Bubble Done\n");
+    for (i = 0; i < N; i++) a[i] = rand() % N + 1;
+    //printArr(a, N);
     QuickSort(a, 0, N-1);
-    printArr(a, N);
+    //printArr(a, N);
+    printf("Quick Done\n");
 
 
     
