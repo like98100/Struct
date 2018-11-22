@@ -1,0 +1,126 @@
+﻿Tree의 특성
+1. 재귀적 구조(Recursive Structure)
+	O(Root)
+	|
+|	|	|
+subtree1	s.t2	s.t3
+| | |	| | |	| | |
+
+2. Connected & No cycle
+ <=> Tree 내의 노드의 수를 N이라 할 때
+	Edge의 수는 반드시 N-1이 된다.
+
+3. Level, Depth, Height
+	Level, Depth	: Root를 기준으로 child node의 depth(ex)root's depth == 0)
+	Height		: 특정 노드에서 leaf에 이르는 가장 긴 경로(ex)tree's height == root node's height)
+
+Graph ) Tree ) Binary Tree ) Binary Search Tree
+|
+V
+Node, Edge의 집합
+
+이진 트리 :: 모든 노드가 최대 2개까지 child node들을 가질 수 있는 트리
+ex) 	O
+	|	|
+	O	O
+	|
+	O
+이진 탐색 트리 :: 트리의 모든 노드에 대해 다음 특성을 만족하는 트리
+	- 노드의 왼쪽 subtree 내의 모든 노드 값들은 기준 노드보다 작거나 같다.
+	- 노드의 오른쪽 subtree 내의 모든 노드 값들은 기준 노드보다 크다.
+N
+|	|
+<=N	>N
+
+ex) 이진 탐색 트리를 노드 입력 순서대로 생성
+{3, 5, 7, 1, 8, 4}
+Root Node : 3(첫번째 노드)
+
+	(3)
+|		|
+(1)		(5)
+	|		|
+	(4)		(7)
+				|
+				(8)
+만약, 7을 찾는다면, 3->5->7으로 2번 만에 찾을 수 있다.
+
+이진 트리에서 Node n과 Height h의 관계
+		O
+	|		|
+	O		O
+|	|		|	|
+O	O		O	O
+Height == 2
+Node 개수 == 1 + 2 + 2^2 = 7
+
+이진 트리에서 노드의 개수를 n이라고 할 때 트리의 height의
+최솟값 :: log_2 n
+최댓값 :: n - 1
+
+이진 트리의 종류
+Complete Binary Tree	(완전 이진 트리)
+Perfect Binary Tree	
+Proper Binary Tree
+
+Proper Binary Tree(==Strict Binary Tree) :: child node의 개수가 0 또는 2인 경우
+
+Complete Binary Tree(완전 이진 트리) :: (완전 :: 특정 조건 한에서 부족함 x)
+마지막 Level을 제외하고 모든 Level이 모두 채워져 있고, 마지막 Level의 경우 모든 leaf가 왼쪽부터 채워진 경우
+ex) 	O
+	|	|
+	O	O
+|	|	|	|		X가 O로 되어있으면 완전 이진 트리 X
+O	O	O	O		X가 존재하지 않으면 완전 이진 트리 O
+| |	| |
+O O	O X
+
+	O
+	|	|
+	O	O
+|	|	|	|		완전 이진 트리 X
+O	O	O	O		
+| |	|	|
+O O	O	O
+
+Perpect Binary Tree :: (완벽 :: 모든 조건 한에서 부족함 x, 개선점이 없음(max))
+모든 Level의 node가 모두 채워진 경우
+
+Q) Perfect Binary Tree의 노드 수가 n이라 할 때 이 트리의 Height는?
+A) log_2 (n+1) - 1
+ex) 7 -> 3 - 1 = 2
+
+Tree Traversal(순회)								참고 :: 고전적인 유명한 AI 문제(Travering Salesman Problem)
+	- Preorder Traversal(전위)
+	- Inorder Traversal(중위)
+	- Postorder Traversal(후위)
+	|_ 셋 다 재귀적으로 정의
+Preorder :: <root> <leftsubtree> <rightsubtree>
+Inorder :: <leftsubtree> <root> <rightsubtree>
+Postorder :: <leftsubtree> <rightsubtree> <root>
+|_ node 방문 순서 pattern에 따라서
+
+ex)			F				Level 0
+		|		|
+		D		J			Level 1
+	|	|		|	|
+	B	E		G	K		Level 2
+|	|			 |
+A	C			I			Level 3
+			|
+			H				Level 4
+
+Hieght == 4(F->J->G->I->H)
+이진 탐색 트리? -> O
+Preorder :: F -> D(s.t's root) -> B(s.t's s.t's root) -> A(...) -> C -> E -> J -> G -> I -> H -> K
+Inorder :: A -> B -> C -> D -> E -> F -> G -> H -> I -> J -> K
+이진 탐색 트리에서 Inorder Traversal 을 하면 정렬 순서
+Postorder :: A -> C -> B -> E -> D -> H -> I -> G -> K -> J -> F
+
+Pre/In/Postorder's DFS(Depth First Search)
+형제 재개 노드보다 child 노드 먼저 탐색
+
+*Breadth - First Search
+(Level - order traversal)
+child 노드보다 형제 자매 노드 먼저 탐색/방문 (Level로 비교하면 편함)
+:: F-> D -> J -> B -> E -> H -> K -> A -> C -> I -> H
