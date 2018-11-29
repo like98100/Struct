@@ -1,0 +1,4 @@
+﻿  source.c
+c:\users\b407_29\desktop\struct\1129\1129\1129\source.c(62): warning C4715: 'searchNode': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  1129.vcxproj -> C:\Users\B407_29\Desktop\Struct\1129\1129\Debug\1129.exe
+  1129.vcxproj -> C:\Users\B407_29\Desktop\Struct\1129\1129\Debug\1129.pdb (Full PDB)

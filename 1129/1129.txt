@@ -1,0 +1,31 @@
+Tree Traversal 	- Width First
+		- Breath Fisrt(추정)
+
+Breath - First
+Queue 이용		(이진 탐색 트리 기준)
+		10	<- root
+	|		|
+	7		15
+|	|		|
+3	8		12
+
+Node *root;
+
+1. Queue 생성
+
+2. root 노드 enqueue()
+
+3. dequeue()를 한 후 해당 노드의 children node를 enqueue()
+	이 과정을 queue가 empty가 될 때까지 반복
+
+4. 종료
+
+방문 순서 :: root node(10) -> 7 -> 15 -> 3 -> 8 -> 12
+
+
+1. BST (Binary Seach Tree)
+ insert(), search()
+
+BST Node		struct bstNode { int data; struct bstNode *left; struct bstNode *right; };
+	left | data | right
+
